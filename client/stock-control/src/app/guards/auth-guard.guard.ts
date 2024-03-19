@@ -12,7 +12,7 @@ export class AuthGuard {
 
   canActivate(): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     if(!this.userService.isLoginIn()){
-      this.router.navigate(['./home'])
+      this.router.navigate(['./login'])
       return false
     }
     this.userService.isLoginIn();

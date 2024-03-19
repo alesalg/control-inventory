@@ -1,0 +1,15 @@
+<p-toolbar styleClass="bg-indigo-800">
+    <div class="p-toolbar-group-start">
+        <p-button icon="pi pi-home" label="Dashboard" (onClick)="sendDashboard()"></p-button>
+    </div>
+    <div class="p-toolbar-group-center">
+        <p-button icon="pi pi-cart-plus" label="Produtos" class="mr-2"  (onClick)="sendProducts()"></p-button>
+        <p-button icon="pi pi-ticket" label="Categorias" class="mr-2"  (onClick)="sendCategories()"></p-button>
+        <p-button icon="pi pi-credit-card" label="Efetuar venda" class="mr-2"  (onClick)="sendSales()"></p-button>
+    </div>
+    <div class="p-toolbar-group-end">
+        <p-button icon="pi pi-sign-out" label="Sair" styleClass="p-button-danger" (onClick)="logout()"></p-button>
+
+    </div>
+    
+</p-toolbar>

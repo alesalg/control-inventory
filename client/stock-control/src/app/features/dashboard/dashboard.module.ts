@@ -9,7 +9,10 @@ import { ToolbarModule} from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { ChartModule } from 'primeng/chart';
+
 import { CookieService } from 'ngx-cookie-service';
+import { SharedModule } from '../../shared/shared.module';
 
 const routes: Routes = [
   {
@@ -19,10 +22,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [DashboardHomeComponent],
   imports: [
     RouterModule.forChild(routes),
-    CommonModule, FormsModule, ReactiveFormsModule, SidebarModule, ButtonModule, ToolbarModule, ToastModule
+    CommonModule, FormsModule, ReactiveFormsModule, SidebarModule, ButtonModule, ToolbarModule, ToastModule, ChartModule, SharedModule
   ],
   providers: [MessageService, CookieService],
   exports: [RouterModule]
