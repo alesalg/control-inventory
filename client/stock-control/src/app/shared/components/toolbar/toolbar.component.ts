@@ -16,7 +16,6 @@ export class ToolbarComponent implements OnInit {
   }
 
   public sendProducts(): void {
-    debugger;
     this.router.navigate(['/products']);
   }
 
