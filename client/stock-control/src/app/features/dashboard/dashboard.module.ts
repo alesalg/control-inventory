@@ -13,6 +13,7 @@ import { ChartModule } from 'primeng/chart';
 
 import { CookieService } from 'ngx-cookie-service';
 import { SharedModule } from '../../shared/shared.module';
+import { CardModule } from 'primeng/card';
 
 const routes: Routes = [
   {
@@ -25,7 +26,7 @@ const routes: Routes = [
   declarations: [DashboardHomeComponent],
   imports: [
     RouterModule.forChild(routes),
-    CommonModule, FormsModule, ReactiveFormsModule, SidebarModule, ButtonModule, ToolbarModule, ToastModule, ChartModule, SharedModule
+    CommonModule, FormsModule, ReactiveFormsModule, SidebarModule, ButtonModule, ToolbarModule, ToastModule, ChartModule, SharedModule, CardModule
   ],
   providers: [MessageService, CookieService],
   exports: [RouterModule]
