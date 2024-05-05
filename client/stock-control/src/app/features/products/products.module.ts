@@ -36,7 +36,6 @@ const routes: Routes = [
     ReactiveFormsModule,
     SharedModule,
     HttpClientModule,
-
     CardModule,
     ButtonModule,
     TableModule,
