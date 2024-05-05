@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { environments } from '../../../environments/environments';
 import { Observable, map } from 'rxjs';
-import { DeleteProductResponse, GetAllProductsResponse } from '../../models/interfaces/products/getAllProductsResponse';
+import { DeleteProductResponse, GetAllProductsResponse } from '../../models/interfaces/products/responses/getAllProductsResponse';
 
 @Injectable({
   providedIn: 'root'

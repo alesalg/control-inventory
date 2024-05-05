@@ -4,7 +4,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { ProductsService } from '../../../../services/products/products.service';
 import { Router } from '@angular/router';
-import { GetAllProductsResponse } from '../../../../models/interfaces/products/getAllProductsResponse';
+import { GetAllProductsResponse } from '../../../../models/interfaces/products/responses/getAllProductsResponse';
 import { EventAction } from '../../../../models/interfaces/products/event/eventAction';
 import { DeleteProductAction } from '../../../../models/interfaces/products/event/deleteProductAction';
 

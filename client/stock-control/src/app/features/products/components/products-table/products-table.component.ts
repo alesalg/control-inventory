@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output, input } from '@angular/core';
-import { GetAllProductsResponse } from '../../../../models/interfaces/products/getAllProductsResponse';
+import { GetAllProductsResponse } from '../../../../models/interfaces/products/responses/getAllProductsResponse';
 import { ProductEvent } from '../../../../models/enums/products/productEvent';
 import { EventAction } from '../../../../models/interfaces/products/event/eventAction';
 import { DeleteProductAction } from '../../../../models/interfaces/products/event/deleteProductAction';
