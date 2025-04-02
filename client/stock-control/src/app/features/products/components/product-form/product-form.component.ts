@@ -73,6 +73,7 @@ export class ProductFormComponent implements OnInit, OnDestroy {
               detail: 'Produto criado com sucesso',
               life: 2500
                
+              
             })
           }
         },
