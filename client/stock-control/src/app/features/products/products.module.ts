@@ -19,6 +19,7 @@ import { ConfirmationService } from 'primeng/api';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductsHomeComponent } from './page/products-home/products-home.component';
 import { ProductsTableComponent } from './components/products-table/products-table.component';
+import { ProductFormComponent } from './components/product-form/product-form.component';
 
 const routes: Routes = [
   {
@@ -28,7 +29,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ProductsHomeComponent, ProductsTableComponent],
+  declarations: [ProductsHomeComponent, ProductsTableComponent, ProductFormComponent],
   imports: [
     RouterModule.forChild(routes),
     CommonModule,

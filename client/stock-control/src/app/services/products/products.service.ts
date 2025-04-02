@@ -1,3 +1,4 @@
+import { CreateProductRequest, CreateProductResponse } from './../../models/interfaces/products/responses/getAllProductsResponse';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
@@ -29,5 +30,9 @@ export class ProductsService {
 
   deleteProduct(productId: string): Observable<DeleteProductResponse> {
     return this.http.delete<DeleteProductResponse>(`${this.API_URL}/product/delete`, {...this.httpOptions, params: {product_id: productId}} )
+  }
+
+  createProduct(requestDatas: CreateProductRequest): Observable<CreateProductResponse> {
+    return this.http.post<CreateProductResponse>(`${this.API_URL}/product`, requestDatas, this.httpOptions)
   }
 }
